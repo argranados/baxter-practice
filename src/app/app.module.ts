@@ -6,6 +6,7 @@ import { PrcaticeOneComponent } from './practice-one/prcatice-one.component';
 import { PrcaticeTwoComponent } from './practice-two/prcatice-two.component';
 import { PracticeThreeComponent } from './practice-three/practice-three.component';
 import { PracticeFourComponent } from './practice-four/practice-four.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PracticeFourComponent } from './practice-four/practice-four.component';
     PracticeFourComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,15 @@
+
+h1 {
+  font-family: Helvetica, Geneva, Arial,
+    SunSans-Regular, sans-serif
+}
+
+h2 {
+  color: purple;
+}
+
+.practicaone {
+  padding: 10px;
+  color: purple;
+  background-color: #d8da3d
+}
