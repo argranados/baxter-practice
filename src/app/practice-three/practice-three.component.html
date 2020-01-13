@@ -1,1 +1,21 @@
 <p>practice-three works!</p>
+
+<input type="file" id="fileUpload" (change)="getFile($event)" />
+<input type="button" id="upload" value="Upload" (click)="onFileChange()" />
+<hr>
+<div id="dvExcel" > 
+  <table>
+      <tr>
+          <th>Fruit</th>
+          <th>Transport</th>
+          <th>Color</th>
+          <th>Day</th>
+          <th>Month</th>
+      </tr>
+      <tr ng-repeat="(key,val) in dataString">
+            <td>{{val}}</td>
+      </tr>
+  </table>
+</div>
+
+<!-- <div id="output"></div> -->
