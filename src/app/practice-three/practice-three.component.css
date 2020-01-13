@@ -1,0 +1,8 @@
+table{
+  font-family: arial, sans-serif;
+  border: 1px solid black;
+  width: 50%;
+}
+th,td{
+    border: 1px solid black;
+}
