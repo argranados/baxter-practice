@@ -32,7 +32,8 @@ export class PracticeThreeComponent implements OnInit {
         initial[name] = XLSX.utils.sheet_to_json(sheet);
         return initial;
       }, {});
-      this.dataString = JSON.stringify(jsonData);
+      this.dataString = jsonData;
+      //debugger;
       // document.getElementById('output').innerHTML = dataString.slice(0, 300).concat("...");
       console.log(this.dataString);
     }

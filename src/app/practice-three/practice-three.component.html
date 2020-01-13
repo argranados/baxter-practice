@@ -4,7 +4,7 @@
 <input type="button" id="upload" value="Upload" (click)="onFileChange()" />
 <hr>
 <div id="dvExcel" > 
-  <table>
+  <table *ngIf="dataString">
       <tr>
           <th>Fruit</th>
           <th>Transport</th>
@@ -12,8 +12,12 @@
           <th>Day</th>
           <th>Month</th>
       </tr>
-      <tr ng-repeat="(key,val) in dataString">
-            <td>{{val}}</td>
+      <tr *ngFor="let row of dataString.Sheet1">
+            <td>{{row.Fruit}}</td>
+            <td>{{row.Transport}}</td>
+            <td>{{row.Color}}</td>
+            <td>{{row.Day}}</td>
+            <td>{{row.Month}}</td>
       </tr>
   </table>
 </div>

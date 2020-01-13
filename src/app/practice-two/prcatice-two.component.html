@@ -1,48 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Excercise two</title>
-</head>
-<body>
+<div>
     <input type="text" value="Textbox1"/>
     <br><br>
     <button type="button" (click)="addElementFunction()">Add textbox</button>
-    <button type="button" onclick="removeTextbox()">Rem textbox</button>
-    <p id="demo" onclick="changeColor()">Click me to change my text color.</p>
-</body>
+    <button type="button" (click)="removeElementFunction()">Rem textbox</button>
+    <p id="demo" (click)="changeColor()">Click me to change my text color.</p>
 
-<script type="text/javascript">
-    function addTextbox(){
-        var elem = document.createElement("input");
-        elem.innerHTML = "new";
-        elem.id = "txtbx";
-        document.body.appendChild(elem);
-    }
 
-    function removeTextbox(){
-        var elem = document.getElementById('txtbx');
-        elem.parentNode.removeChild(elem);
-        return false;
-    }
-    
-    function changeColor() {
-        document.getElementById("demo").style.color = "red";
-    }
+</div>
 
-    $scope.ctrlClickHandler2 = function(){
-        document.write("error");
-        console.log("error");
-            alert("Inside controller: value of myval is ");}
-            
-    function MyCtrl($scope){
-		$scope.ctrlClickHandler = function(){
-			alert("Inside controller: value of myval is ");
-		}		
-	}
-
-</script>
-
-</html>
+<div id="txtbxContainer"></div>
 
 
 <!-- 2. Create a user interface page with a text box and 
