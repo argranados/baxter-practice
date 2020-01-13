@@ -1,1 +1,51 @@
-<p>prcatice-two works!</p>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Excercise two</title>
+</head>
+<body>
+    <input type="text" value="Textbox1"/>
+    <br><br>
+    <button type="button" (click)="addElementFunction()">Add textbox</button>
+    <button type="button" onclick="removeTextbox()">Rem textbox</button>
+    <p id="demo" onclick="changeColor()">Click me to change my text color.</p>
+</body>
+
+<script type="text/javascript">
+    function addTextbox(){
+        var elem = document.createElement("input");
+        elem.innerHTML = "new";
+        elem.id = "txtbx";
+        document.body.appendChild(elem);
+    }
+
+    function removeTextbox(){
+        var elem = document.getElementById('txtbx');
+        elem.parentNode.removeChild(elem);
+        return false;
+    }
+    
+    function changeColor() {
+        document.getElementById("demo").style.color = "red";
+    }
+
+    $scope.ctrlClickHandler2 = function(){
+        document.write("error");
+        console.log("error");
+            alert("Inside controller: value of myval is ");}
+            
+    function MyCtrl($scope){
+		$scope.ctrlClickHandler = function(){
+			alert("Inside controller: value of myval is ");
+		}		
+	}
+
+</script>
+
+</html>
+
+
+<!-- 2. Create a user interface page with a text box and 
+create two button’s with name “Add” and  “Remove” and if you click Add 
+then it should create one more text box and if you click “Remove” 
+it should remove the text box -->
